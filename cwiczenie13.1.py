@@ -7,7 +7,7 @@ class Product:
         self.tax = tax if isinstance(tax, float) and tax >= 0 else 0
 
     def __str__(self):
-        return f"{self.__class__.__name__}. {self.name}. {self.price}. {self.quality}. {self.tax}."
+        return f"{self.__class__.__name__}. {self.name}. {round(self.price,2)}. {self.quality}. {self.tax}."
 
     @staticmethod
     def check_quality(obj):
